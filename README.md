@@ -1,2 +1,2 @@
-# esgperspectives.github.io
-Forthcoming website on sustainable investing
+# esgperspectives
+Forthcoming website on sustainable investing: www.esgperspectives.com
