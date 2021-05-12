@@ -39,7 +39,8 @@
 <li><a class="" href="Climate.html"><span class="header-section-number">6</span> Climate change risk</a></li>
 <li><a class="" href="Equilibrium.html"><span class="header-section-number">7</span> SRI in economic equilibria</a></li>
 </ul>
-<div class="book-extra">
+
+        <div class="book-extra">
           
         </div>
       </nav>
@@ -47,52 +48,33 @@
   </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="Introduction" class="section level1" number="1">
 <h1>
 <span class="header-section-number">1</span> Introduction<a class="anchor" aria-label="anchor" href="#Introduction"><i class="fas fa-link"></i></a>
-<a class="anchor" aria-label="anchor" href="#Introduction"><i class="fas fa-link"></i></a>
 </h1>
 <style>
-.main-container {
-max-width: 1250px !important;
-margin-left: auto;
-margin-right: auto;
-}
 .container-fluid main {
 max-width: 60rem;
 }
 </style>
-<style type="text/css">
-.watch-out {
-  font-size: 12px;
-}
-</style>
 <div id="intro1" class="section level2" number="1.1">
 <h2>
-<span class="header-section-number">1.1</span> What is in this book and who is it for<a class="anchor" aria-label="anchor" href="#intro1"><i class="fas fa-link"></i></a>
-<a class="anchor" aria-label="anchor" href="#intro1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.1</span> What is in this book and what is the target audience<a class="anchor" aria-label="anchor" href="#intro1"><i class="fas fa-link"></i></a>
 </h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 </div>
-<div id="intro2" class="section level2" number="1.2">
+<div id="intro3" class="section level2" number="1.2">
 <h2>
-<span class="header-section-number">1.2</span> The target audience<a class="anchor" aria-label="anchor" href="#intro2"><i class="fas fa-link"></i></a>
-<a class="anchor" aria-label="anchor" href="#intro2"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="intro3" class="section level2" number="1.3">
-<h2>
-<span class="header-section-number">1.3</span> Foreword<a class="anchor" aria-label="anchor" href="#intro3"><i class="fas fa-link"></i></a>
-<a class="anchor" aria-label="anchor" href="#intro3"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.2</span> Foreword<a class="anchor" aria-label="anchor" href="#intro3"><i class="fas fa-link"></i></a>
 </h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="co"># The code below extracts data from bib file and plots journal counts</span>
+<code class="sourceCode R"><span class="co"># The code below extracts data from bib file and plots journal counts</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span>                          <span class="co"># Package for data wrangling</span>
 <span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">read_delim</span><span class="op">(</span><span class="st">"bib.bib"</span>, delim <span class="op">=</span> <span class="st">"@"</span><span class="op">)</span>    <span class="co"># Read bib file</span>
 <span class="va">df_book</span> <span class="op">&lt;-</span> <span class="va">df</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span> <span class="op">%&gt;%</span>                       <span class="co"># From names:</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html">na.omit</a></span><span class="op">(</span><span class="op">)</span>                               <span class="co"># Remove missing points</span>
+  <span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html">na.omit</a></span><span class="op">(</span><span class="op">)</span>                                 <span class="co"># Remove missing points</span>
 <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span><span class="op">(</span><span class="va">df_book</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="st">"type"</span>                 <span class="co"># Change column names</span>
 <span class="va">df</span> <span class="op">&lt;-</span> <span class="va">df</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span> <span class="op">%&gt;%</span>                            <span class="co"># From publication types:</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html">na.omit</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span>                           <span class="co"># Remove missing</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">X1</span><span class="op">)</span><span class="op">&gt;</span><span class="fl">1</span><span class="op">)</span> <span class="op">%&gt;%</span>                <span class="co"># Keep long types</span>
-  <span class="fu">mutate</span><span class="op">(</span>X1 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/substr.html">substr</a></span><span class="op">(</span><span class="va">X1</span>, <span class="fl">3</span>, <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">X1</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>  <span class="co"># Remove first 2 characters</span>
+  <span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html">na.omit</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span>                             <span class="co"># Remove missing</span>
+  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">X1</span><span class="op">)</span><span class="op">&gt;</span><span class="fl">1</span><span class="op">)</span> <span class="op">%&gt;%</span>                  <span class="co"># Keep long types</span>
+  <span class="fu">mutate</span><span class="op">(</span>X1 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/substr.html">substr</a></span><span class="op">(</span><span class="va">X1</span>, <span class="fl">3</span>, <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">X1</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>    <span class="co"># Remove first 2 characters</span>
 <span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/strsplit.html">strsplit</a></span><span class="op">(</span><span class="va">df</span><span class="op">$</span><span class="va">X1</span>, <span class="st">"="</span><span class="op">)</span>                  <span class="co"># Split types before/after "="</span>
 <span class="va">df</span> <span class="op">&lt;-</span> <span class="va">df</span> <span class="op">%&gt;%</span> <span class="fu"><a href="https://rdrr.io/r/base/unlist.html">unlist</a></span><span class="op">(</span><span class="op">)</span>                       <span class="co"># Switch to dataframe</span>
 
@@ -103,8 +85,8 @@ max-width: 60rem;
 <span class="va">jour</span> <span class="op">&lt;-</span> <span class="fu">str_replace_all</span><span class="op">(</span><span class="va">jour</span>, <span class="st">"\\}"</span>, <span class="st">""</span><span class="op">)</span>    <span class="co"># Remove brackets }</span>
 <span class="va">jour</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>jour <span class="op">=</span> <span class="va">jour</span><span class="op">)</span>             <span class="co"># Create dataframe</span>
 <span class="va">jour</span> <span class="op">%&gt;%</span>                                    <span class="co"># Long pipe that creates plot</span>
-  <span class="fu">group_by</span><span class="op">(</span><span class="va">jour</span><span class="op">)</span> <span class="op">%&gt;%</span>                      <span class="co"># Group by journal</span>
-  <span class="fu">summarise</span><span class="op">(</span>n <span class="op">=</span> <span class="fu">n</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>                  <span class="co"># Count</span>
+  <span class="fu">group_by</span><span class="op">(</span><span class="va">jour</span><span class="op">)</span> <span class="op">%&gt;%</span>                        <span class="co"># Group by journal</span>
+  <span class="fu">summarise</span><span class="op">(</span>n <span class="op">=</span> <span class="fu">n</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>                    <span class="co"># Count</span>
   <span class="fu">mutate</span><span class="op">(</span>jour <span class="op">=</span> <span class="fu">str_remove</span><span class="op">(</span><span class="va">jour</span>, <span class="st">"\\\\"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">n</span> <span class="op">&gt;</span> <span class="fl">4</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/reorder.factor.html">reorder</a></span><span class="op">(</span><span class="va">jour</span>, <span class="va">n</span><span class="op">)</span>, y <span class="op">=</span> <span class="va">n</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
@@ -114,11 +96,10 @@ max-width: 60rem;
   <span class="fu">scale_y_log10</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu">theme</span><span class="op">(</span>axis.title.y<span class="op">=</span><span class="fu">element_blank</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu">geom_text</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>label <span class="op">=</span> <span class="va">n</span><span class="op">)</span>, hjust <span class="op">=</span> <span class="fl">1.5</span>, color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Number of articles (logscale)"</span><span class="op">)</span> </code></pre></div>
-<div class="inline-figure"><img src="ESG_p_files/figure-html/unnamed-chunk-2-1.png" width="672"></div>
+  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Number of articles (logscale)"</span><span class="op">)</span>  </code></pre></div>
+<div class="inline-figure"><img src="ESG_p_files/figure-html/journals-1.png" width="672" style="display: block; margin: auto;"></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="co"># The code below plots the evolution of publication intensity</span>
+<code class="sourceCode R"><span class="co"># The code below plots the evolution of publication intensity</span>
 <span class="va">year</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="va">df</span> <span class="op">==</span> <span class="st">"year"</span><span class="op">)</span>                  <span class="co"># Extract year data</span>
 <span class="va">year</span> <span class="op">&lt;-</span> <span class="va">df</span><span class="op">[</span><span class="va">year</span><span class="op">+</span><span class="fl">1</span><span class="op">]</span>                           <span class="co"># Index of year</span>
 <span class="va">year</span> <span class="op">&lt;-</span> <span class="fu">str_replace_all</span><span class="op">(</span><span class="va">year</span>, <span class="st">","</span>, <span class="st">""</span><span class="op">)</span>       <span class="co"># Remove commas</span>
@@ -130,13 +111,12 @@ max-width: 60rem;
   <span class="fu">summarise</span><span class="op">(</span>n <span class="op">=</span> <span class="fu">n</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>                     <span class="co"># ... count the # of instance</span>
   <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">&gt;</span> <span class="fl">1989</span><span class="op">)</span> <span class="op">%&gt;%</span>                    <span class="co"># Keep only &gt; 1989</span>
   <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">n</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu">geom_col</span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"#86B991"</span>, alpha <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span> <span class="op">+</span> 
-  <span class="fu">theme_light</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme</span><span class="op">(</span>axis.title.y<span class="op">=</span><span class="fu">element_blank</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu">xlab</span><span class="op">(</span><span class="st">"Year"</span><span class="op">)</span> </code></pre></div>
-<div class="inline-figure"><img src="ESG_p_files/figure-html/unnamed-chunk-3-1.png" width="672"></div>
+  <span class="fu">theme_light</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme</span><span class="op">(</span>axis.title.y<span class="op">=</span><span class="fu">element_blank</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu">xlab</span><span class="op">(</span><span class="st">"Year"</span><span class="op">)</span>  </code></pre></div>
+<div class="inline-figure"><img src="ESG_p_files/figure-html/years-1.png" width="672" style="display: block; margin: auto;"></div>
 </div>
-<div id="intro4" class="section level2" number="1.4">
+<div id="intro4" class="section level2" number="1.3">
 <h2>
-<span class="header-section-number">1.4</span> Previous surveys and meta studies<a class="anchor" aria-label="anchor" href="#intro4"><i class="fas fa-link"></i></a>
-<a class="anchor" aria-label="anchor" href="#intro4"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.3</span> Previous surveys and meta studies<a class="anchor" aria-label="anchor" href="#intro4"><i class="fas fa-link"></i></a>
 </h2>
 
 </div>
@@ -144,21 +124,19 @@ max-width: 60rem;
   <div class="chapter-nav">
 <div class="empty"></div>
 <div class="next"><a href="ESGdata.html"><span class="header-section-number">2</span> ESG Data</a></div>
-</div>
-<div class="chapter-nav">
-<div class="empty"></div>
-<div class="next"><a href="ESGdata.html"><span class="header-section-number">2</span> ESG Data</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#Introduction"><span class="header-section-number">1</span> Introduction</a></li>
-<li><a class="nav-link" href="#intro1"><span class="header-section-number">1.1</span> What is in this book and who is it for</a></li>
-<li><a class="nav-link" href="#intro2"><span class="header-section-number">1.2</span> The target audience</a></li>
-<li><a class="nav-link" href="#intro3"><span class="header-section-number">1.3</span> Foreword</a></li>
-<li><a class="nav-link" href="#intro4"><span class="header-section-number">1.4</span> Previous surveys and meta studies</a></li>
+<li><a class="nav-link" href="#intro1"><span class="header-section-number">1.1</span> What is in this book and what is the target audience</a></li>
+<li><a class="nav-link" href="#intro3"><span class="header-section-number">1.2</span> Foreword</a></li>
+<li><a class="nav-link" href="#intro4"><span class="header-section-number">1.3</span> Previous surveys and meta studies</a></li>
 </ul>
-<div class="book-extra">
-        <ul class="list-unstyled"></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
 </div>
     </nav>
 </div>
