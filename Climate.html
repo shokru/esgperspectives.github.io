@@ -93,9 +93,9 @@ where <span class="math inline">\(u(\cdot)\)</span> is some utility function, <s
 k_{t+1} = e^{r_t}k_t + w_t-c_t \ge 0,
 \tag{6.1}
 \end{equation}\]</span>
-that is, future wealth equals wealth invested on the asset at (log-)rate <span class="math inline">\(r_t\)</span>, plus wage, minus consumption. It is naturally assumed that the wealth remains positive.
-\end{enumerate}
-The entity must choose the levels of investment <span class="math inline">\(k_t\)</span> and consumption <span class="math inline">\(c_t\)</span> to maximize the welfare <span class="math inline">\(W\)</span>. Taking into consideration two consecutive points in time, the (restricted) Lagrangian reads
+that is, future wealth equals wealth invested on the asset at (log-)rate <span class="math inline">\(r_t\)</span>, plus wage, minus consumption. It is naturally assumed that the wealth remains positive.</li>
+</ul>
+<p>The entity must choose the levels of investment <span class="math inline">\(k_t\)</span> and consumption <span class="math inline">\(c_t\)</span> to maximize the welfare <span class="math inline">\(W\)</span>. Taking into consideration two consecutive points in time, the (restricted) Lagrangian reads
 <span class="math display">\[\begin{align}
 \mathcal{L}= \ &amp;\beta^t u(c_t) - \lambda_t(k_{t+1} - e^{r_t}k_t - w_t+c_t ) &amp;(\text{time }t )\\
 &amp;+\beta^{t+1} u(c_{t+1}) - \lambda_{t+1}(k_{t+2} -e^{r_{t+1}}k_{t+1} - w_{t+1}+c_{t+1} ),  &amp;(\text{time }t+1 )  \nonumber
@@ -111,8 +111,7 @@ and plugging the left part into the right one, this translates to
  \beta^tu'(c_t)=  \beta^{t+1}u'(c_{t+1})e^{r_{t+1}} \Longleftrightarrow \frac{u'(c_t)}{u'(c_{t+1})}=\beta e^{r_{t+1}}.
 \tag{6.3}
 \end{equation}\]</span>
-This equation is a cornerstone of consumption-based asset pricing (see <span class="citation"><a href="Bib.html#ref-cochrane2009asset" role="doc-biblioref">Cochrane</a> (<a href="Bib.html#ref-cochrane2009asset" role="doc-biblioref">2009</a>)</span>) because it links returns to the ratio of marginal utilities (present versus future). While the asset pricing literature usually takes the route of the pricing kernel (or stochastic discount factor), we pursue the analysis as it is derived in economics.</li>
-</ul>
+This equation is a cornerstone of consumption-based asset pricing (see <span class="citation"><a href="Bib.html#ref-cochrane2009asset" role="doc-biblioref">Cochrane</a> (<a href="Bib.html#ref-cochrane2009asset" role="doc-biblioref">2009</a>)</span>) because it links returns to the ratio of marginal utilities (present versus future). While the asset pricing literature usually takes the route of the pricing kernel (or stochastic discount factor), we pursue the analysis as it is derived in economics.</p>
 <p>Often, the utility function is chosen to be CRRA, so that <span class="math inline">\(u(x)=x^{1-\alpha}/(1-\alpha)\)</span>, for <span class="math inline">\(\alpha\)</span> strictly positive but not equal to one (in the latter case, the logarithmic function is used instead). In this case, with <span class="math inline">\(\beta=e^{-\delta}\)</span>, and
 <span class="math display" id="eq:ramsey2">\[\begin{equation}
 \left( \frac{c_t}{c_{t+1}}\right)^{-\alpha}= e^{r_{t+1}-\delta} \Longleftrightarrow r_{t+1}=\delta +\alpha \log \left(\frac{c_{t+1}}{c_t} \right).
