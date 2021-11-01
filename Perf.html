@@ -136,7 +136,7 @@ Intuitively, the price of an asset is increasing in attractiveness, and decreasi
 </ol>
 <p>In Figure <a href="Perf.html#fig:thmod1">4.1</a>, we plot the corresponding prices as functions of the wealth of the Green agent. Naturally, because the Green agent favors the ESG criterion, the price of the green asset increases when sustainable demand increases. For the brown asset, however, it is the opposite in the left panel, because the raw demand of the Green agent is negative (see Equation <a href="Perf.html#eq:demands2">(4.2)</a>. In the right panel, the Green agent has a mildly positive demand and the price of the brown asset converges (as it should) to <span class="math inline">\(m_{Gb}/r=5\)</span>. The limiting value for the green asset is <span class="math inline">\((m_{Gg}+\delta_Ge_g)/r=12.5\)</span>.</p>
 <p>Below, we code the theoretical price function and the plot.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://github.com/stefano-meschiari/latex2exp">latex2exp</a></span><span class="op">)</span> <span class="co"># Package for LaTex inclusion in plots</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com">patchwork</a></span><span class="op">)</span> <span class="co"># Package for graph combinations/layout</span>
 <span class="va">prc</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">W_G</span>, <span class="va">W_B</span>, <span class="va">e</span>, <span class="va">m_G</span>, <span class="va">m_B</span>, <span class="va">d_G</span>, <span class="va">d_B</span>, <span class="va">sigma</span>, <span class="va">s</span>, <span class="va">gamma</span>, <span class="va">r</span><span class="op">)</span><span class="op">{</span>
@@ -358,7 +358,7 @@ In another influential series of papers, <span class="citation"><a href="Bib.htm
 </table></div>
 <p>
 In an attempt to unify several competing theories, <span class="citation"><a href="Bib.html#ref-giese2019foundations" role="doc-biblioref">Giese et al.</a> (<a href="Bib.html#ref-giese2019foundations" role="doc-biblioref">2019</a>)</span> list three channels through which ESG may positively affect performance: cash flows (ESG firms yield higher dividends), risk (ESG firms have lower tail risk) and valuation (ESG firms, via a lower cost of capital, have an increased value). In a related study, <span class="citation"><a href="Bib.html#ref-antoncic2020sustainable" role="doc-biblioref">Antoncic et al.</a> (<a href="Bib.html#ref-antoncic2020sustainable" role="doc-biblioref">2020</a>)</span> find that it is not necessarily the raw ESG ratings that matter, but also their dynamics. They show that firms that experience ESG momentum (when ESG scores increase) generate positive alpha (similarly, <span class="citation"><a href="Bib.html#ref-conen2019hidden" role="doc-biblioref">Conen and Hartmann</a> (<a href="Bib.html#ref-conen2019hidden" role="doc-biblioref">2019</a>)</span>, <span class="citation"><a href="Bib.html#ref-shanaev2021esg" role="doc-biblioref">Shanaev and Ghimire</a> (<a href="Bib.html#ref-shanaev2021esg" role="doc-biblioref">2021</a>)</span> and <span class="citation"><a href="Bib.html#ref-tsai2021changes" role="doc-biblioref">Tsai and Wu</a> (<a href="Bib.html#ref-tsai2021changes" role="doc-biblioref">2021</a>)</span> show that ESG score revisions matter). Changes in ESG ratings are found to have a significant impact on subsequent returns in <span class="citation"><a href="Bib.html#ref-gluck2021esg" role="doc-biblioref">Glück, Hübel, and Scholz</a> (<a href="Bib.html#ref-gluck2021esg" role="doc-biblioref">2021</a>)</span>. The authors conclude that an improvement in the E pillar can be seen (and can act) as a risk mitigating trigger. </p>
-<p>Likewise, <span class="citation"><a href="Bib.html#ref-kim2020capitalizing" role="doc-biblioref">T. Kim and Kim</a> (<a href="Bib.html#ref-kim2020capitalizing" role="doc-biblioref">2020</a>)</span> report that firms that enhanced their environmental sustainability by adopting cleaner production practices earn significant alpha. On the other end of the spectrum, <span class="citation"><a href="Bib.html#ref-glossner2018price" role="doc-biblioref">Gloßner</a> (<a href="Bib.html#ref-glossner2018price" role="doc-biblioref">2021</a>)</span> reports that a portfolio of firms with ESG <em>incidents</em> (e.g., scandals, accidents, etc.) suffers from negative alpha. This may come from analysts downgrading their earning forecasts for these firms (<span class="citation"><a href="Bib.html#ref-derrien2021esg" role="doc-biblioref">Derrien et al.</a> (<a href="Bib.html#ref-derrien2021esg" role="doc-biblioref">2021</a>)</span>). <span class="citation"><a href="Bib.html#ref-waddock1997corporate" role="doc-biblioref">Waddock and Graves</a> (<a href="Bib.html#ref-waddock1997corporate" role="doc-biblioref">1997</a>)</span> even document a positive feedback loop: positive financial performance fuels ESG behaviors which in turn generate higher profitability (this optimistic finding was however subsequently challenged in the replication study by <span class="citation"><a href="Bib.html#ref-zhao2016revisiting" role="doc-biblioref">Zhao and Murrell</a> (<a href="Bib.html#ref-zhao2016revisiting" role="doc-biblioref">2016</a>)</span>). </p>
+<p>Likewise, <span class="citation"><a href="Bib.html#ref-kim2020capitalizing" role="doc-biblioref">T. Kim and Kim</a> (<a href="Bib.html#ref-kim2020capitalizing" role="doc-biblioref">2020</a>)</span> report that firms that enhanced their environmental sustainability by adopting cleaner production practices earn significant alpha. On the other end of the spectrum, <span class="citation"><a href="Bib.html#ref-glossner2018price" role="doc-biblioref">Gloßner</a> (<a href="Bib.html#ref-glossner2018price" role="doc-biblioref">2021</a>)</span> reports that a portfolio of firms with ESG <em>incidents</em> (e.g., scandals, accidents, etc.) suffers from negative alpha. This may come from analysts downgrading their earning forecasts for these firms (<span class="citation"><a href="Bib.html#ref-derrien2021esg" role="doc-biblioref">Derrien et al.</a> (<a href="Bib.html#ref-derrien2021esg" role="doc-biblioref">2021</a>)</span>). <span class="citation"><a href="Bib.html#ref-waddock1997corporate" role="doc-biblioref">Waddock and Graves</a> (<a href="Bib.html#ref-waddock1997corporate" role="doc-biblioref">1997</a>)</span> even document a positive feedback loop: positive financial performance fuels ESG behaviors which in turn generate higher profitability (this optimistic finding was however subsequently challenged in the replication study by <span class="citation"><a href="Bib.html#ref-zhao2016revisiting" role="doc-biblioref">X. Zhao and Murrell</a> (<a href="Bib.html#ref-zhao2016revisiting" role="doc-biblioref">2016</a>)</span>). </p>
 <p>Finally, <span class="citation"><a href="Bib.html#ref-bennani2018esg" role="doc-biblioref">Bennani et al.</a> (<a href="Bib.html#ref-bennani2018esg" role="doc-biblioref">2018</a>)</span> find that ESG has performed well <em>recently</em>. They document that all three pillars yield positive returns for long-short portfolios, but for different reasons: for E, the performance is driven by higher returns of the long leg, while for S and G, it is driven by the poor performance of the short legs.</p>
 </div>
 <div id="mixed" class="section level2" number="4.3">
@@ -556,8 +556,9 @@ However, <span class="citation"><a href="Bib.html#ref-folger2020esg" role="doc-b
 </h2>
 <p>We close this chapter with a small empirical exercise. We compare two US equity indices: one conventional, and one ESG-based. The conventional index is the S&amp;P 500, arguably the reference yardstick for US equities, both among practitioners and scholars alike. The ESG portfolio is the iShares MSCI USA ESG Select ETF, which performs sustainability screens that are based on sectors, as well as on ESG scores. In December 2020, the index comprised 202 stocks, which makes it less diversified, compared to the S&amp;P 500.<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;This is subject for debate because the index is capitalization-weighted, which means that a few dozens of stocks account for a large majority of the weights of the portfolio.&lt;/p&gt;"><sup>31</sup></a> The series start on January 28<span class="math inline">\(^{th}\)</span>, 2005, which is the inception date of the ESG index. It is notoriously complicated to find reliable ESG data prior to 2005.
 In Figure <a href="Perf.html#fig:perf">4.2</a>, we plot the time-series of the two indices.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://www.quantmod.com">quantmod</a></span><span class="op">)</span>                             <span class="co"># Package for financial data retrieval</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://lubridate.tidyverse.org">lubridate</a></span><span class="op">)</span>                            <span class="co"># Package for date management</span>
 <span class="va">tickers</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"SUSA"</span>, <span class="st">"SPY"</span><span class="op">)</span>                    <span class="co"># Ticker names</span>
 <span class="va">prices</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/quantmod/man/getSymbols.html">getSymbols</a></span><span class="op">(</span><span class="va">tickers</span>, src <span class="op">=</span> <span class="st">'yahoo'</span>,  <span class="co"># Yahoo source </span>
                      from <span class="op">=</span> <span class="st">"2005-01-28"</span>, 
@@ -584,7 +585,7 @@ FIGURE 4.2: Performance comparison. We plot the index values (S&amp;P 500 and iS
 </p>
 </div>
 <p>At first sight, the first-order conclusion is that there is not much difference between the two series. In the first half of the sample, the lines are hardly distinguishable. Between 2012 and 2019, the S&amp;P 500 seems to outperform marginally, but 2020 has eroded part of this superiority (see below). In Table <a href="Perf.html#tab:perf2">4.3</a>, we compute a few performance metrics.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">tseries</span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://haozhu233.github.io/kableExtra/">kableExtra</a></span><span class="op">)</span>
 <span class="va">returns</span> <span class="op">&lt;-</span> <span class="va">prices</span> <span class="op">%&gt;%</span>                                                      <span class="co"># returns</span>
@@ -637,19 +638,19 @@ ValueatRisk
 MSCI ESG
 </td>
 <td style="text-align:right;">
-0.1049310
+0.1052250
 </td>
 <td style="text-align:right;">
-0.1841686
+0.1841499
 </td>
 <td style="text-align:right;">
-0.5697550
+0.5714093
 </td>
 <td style="text-align:right;">
--0.3293355
+-0.3293356
 </td>
 <td style="text-align:right;">
--0.0170472
+-0.0170448
 </td>
 </tr>
 <tr>
@@ -657,26 +658,26 @@ MSCI ESG
 S&amp;P 500
 </td>
 <td style="text-align:right;">
-0.1062871
+0.1063946
 </td>
 <td style="text-align:right;">
-0.1936626
+0.1936399
 </td>
 <td style="text-align:right;">
-0.5488263
+0.5494455
 </td>
 <td style="text-align:right;">
 -0.3371725
 </td>
 <td style="text-align:right;">
--0.0178117
+-0.0178113
 </td>
 </tr>
 </tbody>
 </table></div>
 <p>All values are arguably close, and no difference in any metric would pass a test of statistical significance. The broad market index has a marginal superiority in returns, but it is bested across both risk measures. The volatility-adjusted average return is even slightly higher for the ESG index. Overall these results are most in line with those of Section <a href="Perf.html#mixed">4.3</a>: on the long run, its is hard to find evidence (in this small sample) of outperformance in one way or the other.</p>
 <p>Researchers and practitioners often seek to determine if ESG exposure acts as a hedge in bad times. To shed some light on this question, we zoom in on two sub-periods of the sample, namely the years 2008–2009, and 2020. These are shown in Figure <a href="Perf.html#fig:perf3">4.3</a>, where the series are scaled to start at unit value.</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">g2</span> <span class="op">&lt;-</span> <span class="va">prices</span> <span class="op">%&gt;%</span>
     <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">date</span> <span class="op">&gt;</span> <span class="st">"2019-12-31"</span>, <span class="va">date</span> <span class="op">&lt;</span> <span class="st">"2021-06-30"</span><span class="op">)</span> <span class="op">%&gt;%</span>
     <span class="fu">mutate</span><span class="op">(</span><span class="fu">across</span><span class="op">(</span>.cols <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">3</span><span class="op">)</span>, <span class="va">norm_</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
@@ -703,7 +704,7 @@ FIGURE 4.3: Focus on 2008–2009 and 2020–2021. We plot the index values, from
 </div>
 <p>In 2020 (right panel), the two curves move closely together until April, which means that the sustainable tilt did not immunize the ESG portfolio against the crash.<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Again, researchers disagree on this matter. &lt;span class="citation"&gt;&lt;a href="Bib.html#ref-diaz2020reconsidering" role="doc-biblioref"&gt;Diaz, Ibrushi, and Zhao&lt;/a&gt; (&lt;a href="Bib.html#ref-diaz2020reconsidering" role="doc-biblioref"&gt;2021&lt;/a&gt;)&lt;/span&gt; and &lt;span class="citation"&gt;&lt;a href="Bib.html#ref-singh2020covid" role="doc-biblioref"&gt;Singh&lt;/a&gt; (&lt;a href="Bib.html#ref-singh2020covid" role="doc-biblioref"&gt;2020&lt;/a&gt;)&lt;/span&gt; report some hedging benefits from ESG exposure, while &lt;span class="citation"&gt;&lt;a href="Bib.html#ref-folger2020esg" role="doc-biblioref"&gt;Folger-Laronde et al.&lt;/a&gt; (&lt;a href="Bib.html#ref-folger2020esg" role="doc-biblioref"&gt;2020&lt;/a&gt;)&lt;/span&gt;, &lt;span class="citation"&gt;&lt;a href="Bib.html#ref-demers2020esg" role="doc-biblioref"&gt;Demers et al.&lt;/a&gt; (&lt;a href="Bib.html#ref-demers2020esg" role="doc-biblioref"&gt;2021&lt;/a&gt;)&lt;/span&gt; and &lt;span class="citation"&gt;&lt;a href="Bib.html#ref-mahmoud2020anatomy" role="doc-biblioref"&gt;Mahmoud and Meyer&lt;/a&gt; (&lt;a href="Bib.html#ref-mahmoud2020anatomy" role="doc-biblioref"&gt;2020&lt;/a&gt;)&lt;/span&gt; do not.&lt;/p&gt;'><sup>32</sup></a> To a certain extent, this is also true for the subprime crisis in 2008.</p>
 <p>However, the interesting pattern is probably revealed <em>after</em> the crises. It is in the aftermath of the crashes that differences materialize, to the benefit of the ESG index. It is as if, after being burnt by an extreme event, investors redirect flows toward more sustainable assets. This is consistent with some conclusions of <span class="citation"><a href="Bib.html#ref-dyck2019institutional" role="doc-biblioref">Dyck et al.</a> (<a href="Bib.html#ref-dyck2019institutional" role="doc-biblioref">2019</a>)</span>. Nevertheless, zooming out back to Figure <a href="Perf.html#fig:perf">4.2</a> reveals that this effect fades. After 2009, the S&amp;P 500 out-peformed until 2019 (see Figure <a href="Perf.html#fig:perf3">4.3</a>), as if the appeal of ESG stocks decreases with the time span after a crash.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">g2</span> <span class="op">&lt;-</span> <span class="va">returns</span> <span class="op">%&gt;%</span>
     <span class="fu">mutate</span><span class="op">(</span>year <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/lubridate/man/year.html">year</a></span><span class="op">(</span><span class="va">date</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
     <span class="fu">pivot_longer</span><span class="op">(</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">date</span>, <span class="va">year</span><span class="op">)</span>, names_to <span class="op">=</span> <span class="st">"Index"</span>, values_to <span class="op">=</span> <span class="st">"return"</span><span class="op">)</span> <span class="op">%&gt;%</span>
@@ -730,7 +731,7 @@ FIGURE 4.4: Annual returns. In the upper panel, we plot the average daily return
 </p>
 </div>
 <p>To illustrate the shifting relative risk of ESG portfolios, we compute the volatility ratio between the S&amp;P 500 and the ESG index in Figure <a href="Perf.html#fig:vol">4.5</a>. Realized volatilities are computed as the standard deviation of the daily returns over the past 60 trading days. While the S&amp;P 500 is more often the most volatile index, the ESG portfolio does run through some pockets of superior risk, especially between 2016 and 2019.</p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">RcppRoll</span><span class="op">)</span>
 <span class="va">vol</span> <span class="op">&lt;-</span> <span class="va">returns</span> <span class="op">%&gt;%</span>
     <span class="fu">mutate</span><span class="op">(</span>MSCI_ESG <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/RcppRoll/man/RcppRoll-exports.html">roll_sd</a></span><span class="op">(</span><span class="va">MSCI_ESG</span>, <span class="fl">60</span>, fill <span class="op">=</span> <span class="cn">NA</span><span class="op">)</span>,
@@ -802,7 +803,7 @@ FIGURE 4.5: Volatility ratio. We plot the ratio of the S&amp;P 500 volatility di
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Perspectives in ESG equity investing</strong>" was written by Guillaume Coqueret. It was last built on 2021-10-29.</p>
+    <p>"<strong>Perspectives in ESG equity investing</strong>" was written by Guillaume Coqueret. It was last built on 2021-11-01.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

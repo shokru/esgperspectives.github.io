@@ -7,6 +7,7 @@ fig:issues
 fig:evol
 fig:EKC
 fig:co2cap
+fig:ccest
 tab:green
 fig:AUM
 eq:demands
@@ -21,6 +22,10 @@ tab:perf2
 fig:perf3
 fig:perf4
 fig:vol
+eq:meanvar1
+fig:esgfrontier
+eq:ramsey2
+fig:climate
 Introduction
 intro1
 intro3
@@ -58,7 +63,12 @@ csr-and-risk
 other
 empirical-illustration
 Quant
+simple-portfolio-choice-solutions
+improved-mean-variance-allocation
+other-quantitative-techniques
+miscellaneous-tips-methods-and-other-integration-techniques
 Climate
+uncertain-discounting
 measurement
 Equilibrium
 Bib
