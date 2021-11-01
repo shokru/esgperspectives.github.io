@@ -27,7 +27,11 @@ eq:frontier1
 eq:frontier2
 fig:esgfrontier
 eq:wopt
+eq:budgconst
+eq:foc
+eq:ramsey1
 eq:ramsey2
+eq:ramsey4
 fig:climate
 fig:climate2
 fig:scheme
