@@ -56,19 +56,33 @@
 </h1>
 <style>
 .container-fluid main {
-max-width: 60rem;
+max-width: 55rem;
 font-size: 1rem;
 }
 </style>
-<p>One inescapable step in the long journey of SRI is the gathering and processing of ESG-related data. The landscape of ESG data providers is diversified and encompasses both well-established players (e.g., Bloomberg, FTSE, MSCI, Thomson Reuters - Refinitiv, and Standard &amp; Poor’s) and more specialized (if not niche) competitors such as:
-- <a href="https://www.sustainalytics.com">Sustainalytics</a>,<br>
-- <a href="https://vigeo-eiris.com">Vigeo EIRIS</a>,<br>
-- <a href="https://gresb.com">GRESB</a> - Global ESG Benchmark for Real Assets,<br>
-- <a href="http://www.carbon4finance.com">Carbon4 Finance</a>,<br>
-- <a href="https://www.reprisk.com">RepRisk</a>,<br>
-- Truvalue Labs (bought by Factset) and<br>
-- <a href="https://www.issgovernance.com">Institutional Shareholder Services</a> (ISS), part of <strong>Deutsche Börse</strong>,<br>
-to cite a few. In fact, the field is consolidating: for instance, MSCI has bought RiskMetrics (which owned KLD) and Carbon Delta, while S&amp;P acquired Trucost and Morningstar got hold of Sustainalytics and Moody’s of Vigeo Eiris. We refer to <span class="citation"><a href="Bib.html#ref-walter2020sense" role="doc-biblioref">Walter</a> (<a href="Bib.html#ref-walter2020sense" role="doc-biblioref">2020</a>)</span> for an overview of the ESG ratings industry and to <span class="citation"><a href="Bib.html#ref-escrig2019rating" role="doc-biblioref">Escrig-Olmedo et al.</a> (<a href="Bib.html#ref-escrig2019rating" role="doc-biblioref">2019</a>)</span> for a review of its recent evolution. Relatedly, the survey of <span class="citation"><a href="Bib.html#ref-grewal2020research" role="doc-biblioref">Grewal and Serafeim</a> (<a href="Bib.html#ref-grewal2020research" role="doc-biblioref">2020</a>)</span> gives details on measuring, managing and communicating corporate sustainability performance. </p>
+<p>One inescapable step in the long journey of SRI is the gathering and processing of ESG-related data. The landscape of ESG data providers is diversified and encompasses both well-established players (e.g., Bloomberg, FTSE, MSCI, Thomson Reuters - Refinitiv, and Standard &amp; Poor’s) and more specialized (if not niche) competitors such as:</p>
+<ul>
+<li>
+<a href="https://www.sustainalytics.com">Sustainalytics</a>,<br>
+</li>
+<li>
+<a href="https://vigeo-eiris.com">Vigeo EIRIS</a>,<br>
+</li>
+<li>
+<a href="https://gresb.com">GRESB</a> - Global ESG Benchmark for Real Assets,<br>
+</li>
+<li>
+<a href="http://www.carbon4finance.com">Carbon4 Finance</a>,<br>
+</li>
+<li>
+<a href="https://www.reprisk.com">RepRisk</a>,<br>
+</li>
+<li>Truvalue Labs (bought by Factset) and<br>
+</li>
+<li>
+<a href="https://www.issgovernance.com">Institutional Shareholder Services</a> (ISS), part of <strong>Deutsche Börse</strong>,<br>
+to cite a few. In fact, the field is consolidating: for instance, MSCI has bought RiskMetrics (which owned KLD) and Carbon Delta, while S&amp;P acquired Trucost and Morningstar got hold of Sustainalytics and Moody’s of Vigeo Eiris. We refer to <span class="citation"><a href="Bib.html#ref-walter2020sense" role="doc-biblioref">Walter</a> (<a href="Bib.html#ref-walter2020sense" role="doc-biblioref">2020</a>)</span> for an overview of the ESG ratings industry and to <span class="citation"><a href="Bib.html#ref-escrig2019rating" role="doc-biblioref">Escrig-Olmedo et al.</a> (<a href="Bib.html#ref-escrig2019rating" role="doc-biblioref">2019</a>)</span> for a review of its recent evolution. Relatedly, the survey of <span class="citation"><a href="Bib.html#ref-grewal2020research" role="doc-biblioref">Grewal and Serafeim</a> (<a href="Bib.html#ref-grewal2020research" role="doc-biblioref">2020</a>)</span> gives details on measuring, managing and communicating corporate sustainability performance. </li>
+</ul>
 <p>In Figure <a href="ESGdata.html#fig:googletrends">2.1</a>, we plot the relative amount of Google queries through time for online searches of the terms <em>CSR</em> and <em>ESG</em>. It shows that the term CSR has been more popular on average in the past 15 years, but the recent trend is in favor of ESG. One reason for that is that the acronym ESG is progressively becoming mainstream in corporate reporting standards and, consequently, in investors’ jargon. </p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/PMassicotte/gtrendsR">gtrendsR</a></span><span class="op">)</span>                 <span class="co"># Package for Google trends</span>
