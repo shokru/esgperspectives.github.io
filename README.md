@@ -1,2 +1,2 @@
 # esgperspectives
-Forthcoming website on sustainable investing: www.esgperspectives.com
+Website hosting a book on sustainable investing: www.esgperspectives.com
