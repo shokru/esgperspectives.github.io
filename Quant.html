@@ -168,7 +168,7 @@ Table: Examples of ESG-driven portfolio optimization techniques</p>
 \underset{w}{\max} \left\{\underbrace{w'\mu - \frac{\gamma}{2}w'\Sigma w }_{\text{mean-variance}}+\underbrace{f\left(\frac{w'g}{w'1}\right)}_{\text{ESG tilt}}, \text{ subject to } w'1&gt;0 \right\},
 \tag{5.1}
 \end{equation}\]</span>
-where <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\Sigma\)</span> are the mean vector and covariance matrix of the returns <span class="math inline">\(r\)</span>, and <span class="math inline">\(f\)</span> is the ESG preference function. As is customary, <span class="math inline">\(\gamma&gt;0\)</span> is the risk aversion parameter. The constraint <span class="math inline">\(w'1&gt;0\)</span> implies that the portfolio has a long-only bias, i.e., that long positions strictly outweigh short ones. Under additional factor assumptions, <span class="citation"><a href="Bib.html#ref-varmaz2021portfolio" role="doc-biblioref">Varmaz, Fieberg, and Poddig</a> (<a href="Bib.html#ref-varmaz2021portfolio" role="doc-biblioref">2021</a>)</span> show that it is possible to simplify this program to a plain quadratic optimization with linear constraints.</p>
+where <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\Sigma\)</span> are the mean vector and covariance matrix of the returns <span class="math inline">\(r\)</span>, and <span class="math inline">\(f\)</span> is the ESG preference function. As is customary, <span class="math inline">\(\gamma&gt;0\)</span> is the risk aversion parameter. The constraint <span class="math inline">\(w'1&gt;0\)</span> implies that the portfolio has a long-only bias, i.e., that long positions strictly outweigh short ones. Under additional factor assumptions, <span class="citation"><a href="Bib.html#ref-varmaz2021portfolio" role="doc-biblioref">Varmaz, Fieberg, and Poddig</a> (<a href="Bib.html#ref-varmaz2021portfolio" role="doc-biblioref">2022</a>)</span> show that it is possible to simplify this program to a plain quadratic optimization with linear constraints.</p>
 <p>In traditional mean-variance analysis, the agent has the choice between fixing one level of average return and minimizing the volatility, or maximizing the average return of a given level of return dispersion. In the above formulation, there is one additional choice to make, and it relates to the average ESG score <span class="math inline">\(\bar{g}\)</span>. The efficient frontier is defined by maximizing the expected return under constraints
 <span class="math display" id="eq:frontier1">\[\begin{equation}
 \max \left\{w'\mu, \ \text{subject to } \begin{array}{lll} w'1&gt;0,  &amp; \text{leverage constraint}\\ \sqrt{w'\Sigma w} &lt; \sigma_\text{target}, &amp; \text{volatility constraint} \\ w'g &gt; g_\text{target} &amp; \text{ESG constraint}  \end{array}\right\},
@@ -248,7 +248,7 @@ The risky portion of the portfolio thus consists of three layers: the tangency p
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Perspectives in sustainable equity investing</strong>" was written by Guillaume Coqueret. It was last built on 2022-05-14.</p>
+    <p>"<strong>Perspectives in sustainable equity investing</strong>" was written by Guillaume Coqueret. It was last built on 2022-07-18.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
